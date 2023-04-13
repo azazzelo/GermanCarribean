@@ -218,6 +218,7 @@ img.cruiser:hover {
     .nav{
         white-space: pre-line;
         padding-bottom: 10px;
+        width: 400px;
     }
     .nav a{
         margin-bottom: 7px;
