@@ -1,0 +1,180 @@
+body {
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 99);
+}
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+a.nav-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+img.logo {
+    margin-right: 40px;
+    margin-bottom: -4px;
+}
+
+
+
+.nav-item {
+    position: relative;
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+
+}
+
+.nav-item:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 3px;
+    /*задаём ширину линии*/
+    background-color: rgb(255, 187, 0);
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.nav-item:hover:after,
+.nav-item:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.route1 {
+    display: inline-block;
+    width: 400px;
+    margin: 0;
+    margin-right: 190px
+}
+
+.route2 {
+    width: 400px;
+    display: inline-block;
+}
+
+.routes {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 995px;
+    padding: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+
+@media screen and (max-width:999px) {
+    .routes {
+        width: 400px;
+    }
+
+    .route1 {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.description {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+img {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h2 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 995px;
+    margin: 0 auto;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td:first-child {
+    background: rgb(0, 0, 99);
+    color: white;
+
+    padding: 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+th,
+td {
+    border-style: solid;
+
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+td {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: goldenrod;
+
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+.table {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 995px;
+    padding: 0 auto;
+    overflow-x: auto;
+}
+@media screen and (max-width: 832px)
+{
+    .nav{
+        white-space: pre-line;
+        padding-bottom: 10px;
+    }
+    .nav a{
+        margin-bottom: 7px;
+    }
+}

@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+}
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 99);
+}
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+
+a.nav-item {
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+img.logo {
+    margin-right: 40px;
+    margin-bottom: -4px;
+}
+
+.nav-item {
+    position: relative;
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+
+}
+
+.nav-item:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 3px;
+    /*задаём ширину линии*/
+    background-color: rgb(255, 187, 0);
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.nav-item:hover:after,
+.nav-item:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.podheader {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../ships/lay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: -22px;
+    color: white;
+    text-align: center;
+
+}
+
+.podheader:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 46, 46, 0.5);
+}
+
+.podheader .slogan p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: brightness(100%);
+}
+
+.slogan h1 {
+    padding-top: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    filter: brightness(100%);
+}
+
+ul {
+    margin-top: 100px;
+    filter: brightness(100%);
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+
+}
+
+ul li a {
+    padding: 1em 1em 1em 1em;
+    margin: 0 1.0em 0.0;
+    background-color: rgb(255, 187, 0);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li a:hover {
+    transform: background-color 1s;
+    transition-duration: 0.5s;
+    background-color: rgb(0, 0, 99);
+}
+
+.pics1 {
+    
+    height: 450px;
+    width: 1300px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.pics2 {
+    width: 1268px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.zag {
+    width: 1268px;
+    margin: 0 auto;
+    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cont {
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+.podcont {
+
+    border-top: 1px solid black;
+    width: 400px;
+    height: 100px;
+    
+}
+.conteiner{
+    display: inline-block;
+ 
+    width: 400px;
+    height: 500px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.conteiner1{
+    display: inline-block;
+
+    width: 400px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+h1.podpisi {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 auto;
+}
+
+img.cruiser {
+    transition: 0.5s;
+    display: block;
+    border: none;
+}
+
+img.cruiser:hover {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1300px) {
+    .pics1{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .conteiner{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .conteiner1{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .zag{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 832px)
+{
+    .nav{
+        white-space: pre-line;
+        padding-bottom: 10px;
+    }
+    .nav a{
+        margin-bottom: 7px;
+    }
+}

@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+}
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 99);
+}
+
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+a.nav-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+img.logo {
+    margin-right: 40px;
+    margin-bottom: -4px;
+}
+
+
+
+.nav-item {
+    position: relative;
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+
+}
+
+.nav-item:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 3px;
+    /*задаём ширину линии*/
+    background-color: rgb(255, 187, 0);
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.nav-item:hover:after,
+.nav-item:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+/* SLIDER */
+.slider {
+    max-width: 1000px;
+    max-height: 562px;
+    margin: 0 auto;
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* Responsive styles using @media queries */
+
+/* SLIDER */
+
+.ship{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.ship h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+@media screen and (max-width: 1199px)
+{
+
+    .ship{
+        width: 700px;
+    }
+    .ship img{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .slider {
+        width: 700px;
+    }
+}
+@media screen and (max-width: 699px)
+{
+    .ship{
+        width: 480px;
+    }
+    .ship img{
+        width: 480px;
+        margin: 0 auto;
+    }
+    .slider {
+        width: 480px;
+
+    }
+}
+@media screen and (max-width: 832px)
+{
+    .nav{
+        white-space: pre-line;
+        padding-bottom: 10px;
+    }
+    .nav a{
+        margin-bottom: 7px;
+    }
+}
